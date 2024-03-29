@@ -148,12 +148,16 @@
                     lastMessage.content = [];
                     lastMessage.delay = 0;
                     while (messageContent.length > 0) {
-                        let delayMs = randomIntFromInterval(50, 200);
-                        if (Math.random() < 0.05) {
-                            delayMs = 500;
+                        const nextWord = messageContent.shift()!;
+                        if (nextWord === '|delay|') {
+                            await delay(736);
+                            continue;
+                        } else if (Math.random() < 0.05) {
+                            await delay(416);
+                        } else {
+                            await delay(randomIntFromInterval(50, 200));
                         }
-                        await delay(delayMs);
-                        lastMessage.content.push(messageContent.shift()!);
+                        lastMessage.content.push(nextWord);
                         messages = _messages;
                     }
                 }, lastMessage.delay)

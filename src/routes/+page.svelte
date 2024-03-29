@@ -42,8 +42,12 @@
             } satisfies ChatMessage);
         } else {
             clippyAgent.stop();
-            clippyAgent.play(scriptMessage.clippyAction);
+            clippyAgent.play('Processing');
             addMessageToHistory(scriptMessage.chatMessage);
+            setTimeout(() => {
+                clippyAgent.stop();
+                clippyAgent.play(scriptMessage.clippyAction);
+            }, randomIntFromInterval(6000, 9000));
         }
     }
 
@@ -62,7 +66,7 @@
             return;
         }
 
-        loadedTsv.split('\n').slice(1).map(line => {
+        loadedTsv.split('\n').filter(line => !line.startsWith('#')).slice(1).map(line => {
             line = line.trim();
             const splitLine = line.split('\t');
             scriptFromTsv.push({

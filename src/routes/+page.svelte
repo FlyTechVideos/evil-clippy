@@ -42,7 +42,6 @@
             } satisfies ChatMessage);
         } else {
             clippyAgent.stop();
-            clippyAgent.play('Processing');
             addMessageToHistory(scriptMessage.chatMessage);
             setTimeout(() => {
                 clippyAgent.stop();
@@ -95,7 +94,12 @@
         if (textContent[0] === '/load' && scriptFromTsv.length === 0) {
             await loadScript(textContent);
         }
-        postNextClippyMessage();
+        if (textContent[0] === '/clear') {
+            messages = [];
+            scriptFromTsv = [];
+        } else {
+            postNextClippyMessage();
+        }
     }
 
     function loadClippy() {

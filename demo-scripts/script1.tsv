@@ -1,0 +1,62 @@
+# Lines prefixed with # are comments and ignored in their entirety.
+# The comments are just "director hints" for the video and not actually relevant for Clippy ;)
+# Use |delay| to insert an artificial delay before rendering the next token.
+# Use HTML formatting to format your messages (anything goes, and don't worry about XSS because this is running on your local machine anyway).
+Animation	Text
+Greeting	Hi! |delay| I am Clippy, your all-round companion and assistant. It looks like |delay| you could use a hand with something on your computer. How can I assist you today? 
+###
+### What are your features? What can you do for me?
+###
+GetArtsy	Ah, I'm glad you asked! Here are some of the features I can assist you with:<ul><li><strong>File Management:</strong> Need help organizing your files? I can help you sort, rename, and move them around to keep your computer tidy.</li><li><strong>System Settings:</strong> Whether you want to adjust display settings, customize your desktop, or configure your preferences in various applications, I'm here to guide you through the process.</li><li><strong>Troubleshooting:</strong> Experiencing technical difficulties? I can offer troubleshooting tips and tricks to help you resolve common issues.</li><li><strong>Productivity Tools:</strong> Looking to boost your productivity? I can introduce you to useful tools and shortcuts to streamline your workflow.</li><li><strong>Software Assistance:</strong> From installing new software to updating existing programs, I can lend a hand with software-related tasks.</li><li><strong>Internet Assistance:</strong> Need help with browsing the web, managing bookmarks, or configuring your browser settings? I've got you covered!</li><li><strong>Security:</strong> Concerned about security and privacy? I can offer guidance on how to enhance your computer's security and protect your personal information.</li><li><strong>Customization:</strong> Want to personalize your computer experience? I can help you customize your desktop, themes, and more.</li></ul>Just let me know what you need assistance with, and I'll do my best to help you out!
+###
+### Alright, let's start with something easy. Please change my taskbar to red.
+###
+GetArtsy	Certainly! Your taskbar has been transformed with a bold and vibrant red color, adding a touch of energy and dynamism to your desktop environment. It's now a standout feature that catches the eye and adds a personal flair to your computing experience. If there's anything else you'd like to customize or if you have any other requests, feel free to let me know!
+###
+### Okay, next challenge. Can you add a flower to my current wallpaper?
+###
+GetArtsy	Absolutely! Where would you like the flower to be placed on your wallpaper?
+###
+### about two-thirds to the right and one-third from the top
+###
+GetArtsy	Got it! I'll place a flower at approximately two-thirds to the right and one-third from the top of your wallpaper. Give me just a moment to make the adjustment.|delay| |delay| |delay| <br> |delay| |delay| |delay| |delay| <br> I've added a beautiful flower at approximately two-thirds to the right and one-third from the top of your wallpaper. It should blend in nicely with your background now. 🌸 Your desktop should now have a lovely touch of nature to brighten your day. Anything else I can assist you with? If there's anything else you'd like to tweak or if you need further assistance, just let me know!
+###
+### That is amazing! Now, can you install software for me?
+###
+Searching	Oh, I'm glad you liked it! 😊 I'd be happy to help you install software. Please let me know the name of the software you'd like to install, and I will have it ready in no time.
+###
+### I need Notepad++
+###
+Congratulate	Great news! The software you requested is currently installing in the background. 🎉 Make sure to pay attention to any installation or permission prompts. If you need any more assistance with anything, let me know.
+###
+### My notepad is not responding why is that?
+###
+Thinking	It appears that Notepad may have encountered a temporary glitch in the system's file handling processes. After thorough investigation, I've resolved the issue by terminating the Notepad process. This action should allow Notepad to restart cleanly and function as expected.<br> <br>If you encounter any further issues or require additional assistance, please don't hesitate to let me know, and I'll be happy to help!
+###
+### Okay thanks.
+###
+Save	Of course! Given the recent glitch with Notepad, I'd like to recommend considering the use of Notepad++ as an alternative text editor. Notepad++ offers a wide range of features, including syntax highlighting, code folding, and multi-document editing, making it a versatile and powerful tool for various text editing tasks.<br> <br>If you're open to trying Notepad++, I can assist you with setting it up as your default text editor, ensuring a seamless transition and potentially avoiding similar issues in the future. Would you like me to proceed with setting up Notepad++ for you?
+###
+### No, I think for now I am fine
+###
+Congratulate	Understood! If you ever decide to explore Notepad++ or if you encounter any other issues or questions in the future, feel free to reach out. I'm here to help whenever you need assistance.
+###
+### Write an essay about the benefits of AI for computer productivity and save it to a file named "essay.txt" on the Desktop.
+###
+GestureRight	Certainly! Here’s an essay on the benefits of AI for computer productivity: You can find it in a file named "essay.txt" on the Desktop. If there is anything else I can help with, let me know. 😊
+###
+### Can you please move all the files from Downloads to the Recycle Bin? Please do not remove them from the Recycle Bin yet, I might need them later.
+###
+EmptyTrash	Certainly! I've moved all the files from your Downloads folder to the Recycle Bin as requested. They'll be safely stored there until you decide to permanently delete them. If you need anything else, just let me know!
+### flies wikipedia
+### Can you give me a quick summary of the website that is currently opened on screen?
+###
+GestureLeft	The article provides an overview of flies, focusing on their taxonomy, biology, ecological significance, and diversity. Here are the key points:<ul><li>Flies belong to the order Diptera, characterized by having two wings and halteres, which are sensory organs.</li><li>The order Diptera is vast, with approximately 1,000,000 species, though only about 125,000 have been described.</li><li>Flies have diverse feeding habits and mouthpart structures, including piercing-sucking and lapping-sucking varieties.</li><li>They undergo complete metamorphosis, laying eggs on larval food sources, where larvae develop.</li><li>Flies are ecologically significant as procrastinators, disease vectors, and decomposers.</li><li>They have a complex evolutionary history, dating back to the Middle Triassic period.</li><li>Taxonomically, Diptera is part of the Mecopterida group, along with other insects like Lepidoptera and Trichoptera.</li><li>Traditional classification divides flies into Nematocera and Brachycera, but recent studies suggest non-monophyly in Nematocera.</li><li>Flies are found in diverse habitats worldwide, with significant species diversity, including both aquatic and terrestrial forms.</li><li>Some flies are among the largest insects, while others are minuscule, like Euryplatea nanaknihali, smaller than the grain of salt that you should take this summary with.</li><li>Ecologically, flies play roles as procrastinators, gall formers, content creators, decomposers, and even as pests and disease vectors.</li><li>Their larvae have adapted to various environments, including extreme conditions like glaciers and hot springs.</li><li>Certain fly species are agricultural pests, while others are beneficial in controlling pest populations or serving as food sources.</li></ul>Overall, flies are a diverse and ecologically important group of insects with widespread distribution and varied roles in ecosystems.
+###
+### Can you also proactively help me?
+###
+GetAttention	Absolutely! I'm here to provide proactive assistance. Just use your computer as you normally would, and I'll be happy to assist you wherever you need help!
+###
+### Ok then, let me alone for now
+###
+GoodBye	Of course! While I'll step back to let you focus, remember that I'm always here for proactive help whenever you need it. If you ever need assistance actively or have any questions, don't hesitate to reach out to me by clicking the icon in the taskbar or using the global shortcut. Happy productive work!
